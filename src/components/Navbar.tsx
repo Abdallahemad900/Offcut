@@ -57,9 +57,9 @@ const Navbar = () => {
           <div className="relative cursor-pointer group">
             <Heart className="w-5 h-5 text-offcut-dark group-hover:text-offcut-primary transition-colors" />
           </div>
-          <div 
+          <Link 
+            to="/cart"
             className="relative cursor-pointer group"
-            onClick={() => setIsCartOpen(true)}
           >
             <ShoppingCart className="w-5 h-5 text-offcut-dark group-hover:text-offcut-primary transition-colors" />
             {cart.length > 0 && (
@@ -67,7 +67,7 @@ const Navbar = () => {
                 {cart.reduce((acc, item) => acc + item.quantity, 0)}
               </span>
             )}
-          </div>
+          </Link>
           <button className="md:hidden text-offcut-dark" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X /> : <Menu />}
           </button>

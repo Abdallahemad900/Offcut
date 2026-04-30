@@ -8,8 +8,9 @@ import ContactPage from './pages/ContactPage'
 import StudioPage from './pages/StudioPage'
 import CirclePage from './pages/CirclePage'
 import AIChat from './sections/AIChat'
-import CartDrawer from './components/CartDrawer'
 import Footer from './components/Footer'
+import CartPage from './pages/CartPage'
+import CheckoutPage from './pages/CheckoutPage'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
@@ -40,9 +41,10 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/studio" element={<StudioPage />} />
           <Route path="/circle" element={<CirclePage />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/checkout" element={<CheckoutPage />} />
         </Routes>
         <AIChat />
-        <CartDrawer />
         <Footer />
       </main>
     </Router>
