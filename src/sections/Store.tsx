@@ -5,37 +5,37 @@ import { useStore } from '../store/useStore';
 const products = [
   {
     id: '1',
-    name: 'Artisan Denim Jacket',
+    name: 'Artisan Patchwork Bomber',
     price: 240,
     category: 'Women',
-    image: '/products/jacket.png',
+    image: '/images/patchwork-bomber-women.jpg',
     rating: 4.8,
     description: 'Upcycled from premium denim scraps by our master artisans in Cairo.'
   },
   {
     id: '2',
-    name: 'Patchwork Tote Bag',
+    name: 'Denim Totebag',
     price: 85,
     category: 'Accessories',
-    image: '/products/bag.png',
+    image: '/images/denim-bag.jpg',
     rating: 4.9,
     description: 'Zero-waste design featuring geometric textile waste patterns.'
   },
   {
     id: '3',
-    name: 'Recycled Organic Dress',
+    name: 'Recycled Denim Dress',
     price: 180,
     category: 'Women',
-    image: '/products/dress.png',
+    image: '/images/denim-dress.jpg',
     rating: 4.7,
     description: 'Breathable recycled organic cotton with earth-tone dyes.'
   },
   {
     id: '4',
-    name: 'Vintage Scraps Vest',
+    name: 'Industrial Bomber Jacket',
     price: 120,
     category: 'Men',
-    image: '/products/jacket.png', // Reuse for demo
+    image: '/images/patchwork-bomber-men.jpg',
     rating: 4.5,
     description: 'Futuristic silhouette crafted from industrial textile leftovers.'
   }
