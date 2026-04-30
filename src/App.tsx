@@ -8,6 +8,7 @@ import ContactPage from './pages/ContactPage'
 import StudioPage from './pages/StudioPage'
 import CirclePage from './pages/CirclePage'
 import AIChat from './sections/AIChat'
+import CartDrawer from './components/CartDrawer'
 import Footer from './components/Footer'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -41,6 +42,7 @@ function App() {
           <Route path="/circle" element={<CirclePage />} />
         </Routes>
         <AIChat />
+        <CartDrawer />
         <Footer />
       </main>
     </Router>

@@ -6,7 +6,7 @@ import { useStore } from '../store/useStore';
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const cart = useStore((state) => state.cart);
+  const { cart, setIsCartOpen } = useStore();
   const location = useLocation();
 
   useEffect(() => {
@@ -57,7 +57,10 @@ const Navbar = () => {
           <div className="relative cursor-pointer group">
             <Heart className="w-5 h-5 text-offcut-dark group-hover:text-offcut-primary transition-colors" />
           </div>
-          <div className="relative cursor-pointer group">
+          <div 
+            className="relative cursor-pointer group"
+            onClick={() => setIsCartOpen(true)}
+          >
             <ShoppingCart className="w-5 h-5 text-offcut-dark group-hover:text-offcut-primary transition-colors" />
             {cart.length > 0 && (
               <span className="absolute -top-2 -right-2 bg-offcut-primary text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center">

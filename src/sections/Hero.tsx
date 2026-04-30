@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Float, MeshDistortMaterial, Sphere, PerspectiveCamera } from '@react-three/drei';
 import gsap from 'gsap';
+import { Link } from 'react-router-dom';
 
 const FloatingFabric = () => {
   return (
@@ -48,12 +49,18 @@ const Hero = () => {
             Crafted with love by Egyptian women artisans.
           </p>
           <div className="flex flex-wrap gap-4 mt-4">
-            <button className="px-8 py-4 bg-offcut-primary text-white rounded-full font-bold uppercase tracking-widest hover:bg-offcut-dark transition-all transform hover:scale-105">
+            <Link 
+              to="/store"
+              className="px-8 py-4 bg-offcut-primary text-white rounded-full font-bold uppercase tracking-widest hover:bg-offcut-dark transition-all transform hover:scale-105 text-center"
+            >
               Explore Store
-            </button>
-            <button className="px-8 py-4 border-2 border-offcut-primary text-offcut-primary rounded-full font-bold uppercase tracking-widest hover:bg-offcut-primary hover:text-white transition-all transform hover:scale-105">
+            </Link>
+            <Link 
+              to="/about"
+              className="px-8 py-4 border-2 border-offcut-primary text-offcut-primary rounded-full font-bold uppercase tracking-widest hover:bg-offcut-primary hover:text-white transition-all transform hover:scale-105 text-center"
+            >
               Our Mission
-            </button>
+            </Link>
           </div>
         </div>
       </div>
